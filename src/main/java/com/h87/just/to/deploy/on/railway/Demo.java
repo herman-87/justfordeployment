@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Demo {
-    @GetMapping("/api/demo")
-    public ResponseEntity<String> getHelloWorld() {
-        return ResponseEntity.status(HttpStatus.OK).body("The first deployment");
+    @GetMapping("/demo")
+    public ResponseEntity<String> getStatus() {
+        return ResponseEntity.status(HttpStatus.OK).body("app is running");
     }
 }
